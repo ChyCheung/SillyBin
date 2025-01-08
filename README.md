@@ -1,2 +1,2 @@
-# SillyBinary
-A blog to document my coder life.
+# SillyBin
+代码垃圾箱，一个用于回忆和记录的缓存区
