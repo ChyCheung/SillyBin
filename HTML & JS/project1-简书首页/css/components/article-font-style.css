@@ -1,0 +1,21 @@
+.article-part {
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.article-part .title:hover {
+    text-decoration: underline;
+}
+
+.article-part .title h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 10px;
+}
+
+.article-part p {
+    font-size: 13px;
+    color: #999999;
+}

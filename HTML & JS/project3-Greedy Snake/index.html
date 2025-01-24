@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greedy Snake</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="stage" class="stage">
+            <div id="snake">
+                <div></div>
+            </div>
+            <div id="food">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="game-over">Game Over!</div>
+        </div>
+        <div id="info">
+            <div>SCORE:<span id="score">0</span></div>
+            <div>LEVEL:<span id="level">1</span></div>
+        </div>
+    </div>
+    <script>
+        function getDeviceType() {
+            const ua = navigator.userAgent;
+            if (/mobile/i.test(ua)) {
+                return 'Mobile';
+            } else if (/tablet/i.test(ua)) {
+                return 'Tablet';
+            } else {
+                return 'Desktop';
+            }
+        }
+        let device = getDeviceType();
+        if (device !== 'Desktop') {
+            alert('远离手机，珍爱生命！');
+            window.close();
+        }
+    </script>
+
+    <script src="./scripts/Greedy Snake.js"></script>
+</body>
+
+</html>

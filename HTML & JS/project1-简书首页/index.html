@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简书</title>
+    <link rel="stylesheet" href="./css/modules/reset.css">
+    <link rel="stylesheet" href="./css/components/nav-menu.css">
+    <link rel="stylesheet" href="./css/components/style-mode.css">
+    <link rel="stylesheet" href="./css/components/btn-menu.css">
+    <link rel="stylesheet" href="./css/components/banner.css">
+    <link rel="stylesheet" href="./css/components/article-font-style.css">
+    <link rel="stylesheet" href="./css/components/article-info-style.css">
+    <link rel="stylesheet" href="./css/components/article-btn-more.css">
+    <link rel="stylesheet" href="./css/components/download.css">
+    <link rel="stylesheet" href="./css/components/author-header.css">
+    <link rel="stylesheet" href="./css/components/author-item.css">
+    <link rel="stylesheet" href="./css/components/author-btn-more.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+    <link rel="stylesheet" href="./css/layout/index.css">
+    <link rel="stylesheet" href="./css/layout/large.css">
+    <link rel="stylesheet" href="./css/layout/medium.css">
+    <link rel="stylesheet" href="./css/layout/small.css">
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="flex--row nav">
+            <div class="flex-default--row nav-left">
+                <a href="https://www.jianshu.com/" class="nav-logo">
+                    <img src="./images/logo/logo.png" alt="logo">
+                </a>
+                <div class="nav-menu">
+                    <button onclick="toggleActive(this)" class="btn btn-menu-toggle">
+                        <img src="./images/icons/menu.png" alt="nav-menu-toggle">
+                    </button>
+                    <ul class="flex-default--row flex-xs--column nav-menu-list">
+                        <li class="tab active">
+                            <a href="/project1-简书首页/index.html">
+                                <img src="./images/icons/nav-item.png" alt="nav-item">
+                                <span>首页</span>
+                            </a>
+                        <li class="tab">
+                            <a href="https://www.jianshu.com/apps?utm_medium=desktop&utm_source=navbar-apps">
+                                <img src="./images/icons/phone.png" alt="phone">
+                                <span>下载App</span>
+                            </a>
+                        </li>
+                        <li class="tab">
+                            <a href="https://www.jianshu.com/vips#/recommand">
+                                <img src="./images/icons/vip.png" alt="vip">
+                                <span>会员</span>
+                            </a>
+                        </li>
+                        <li class="tab">
+                            <a href="https://www.jianshu.com/techareas/backend">
+                                <img src="./images/icons/code.png" alt="code">
+                                <span>IT技术</span>
+                            </a>
+                        </li>
+                        <li class="search">
+                            <form class="search-form" action="https://www.jianshu.com/search" method="get">
+                                <input type="search" name="search" class="search-input" placeholder="搜索" />
+                                <button id="search-btn" type="submit" class="search-btn"><img
+                                        src="./images/icons/search-icon.png" alt="search-icon"></img></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-default--row nav-right">
+                <div class="flex--row btn btn-menu">
+                    <div class="flex--row btn btn-menu1">
+                        <a href="" class="btn style-mode-btn">
+                            <span class="style-mode-text">Aa</span>
+                            <div class="style-mode-selection"></div>
+                        </a>
+                        <a href="https://www.jianshu.com/sign_in" class="btn sign-in-btn" _blank>登录</a>
+                    </div>
+                    <div class="flex--row btn btn-menu2">
+                        <a href="https://www.jianshu.com/sign_up" class="btn sign-up-btn" _blank>
+                            <span class="btn-text1">注册</span>
+                        </a>
+                        <a href="https://www.jianshu.com/writer#/" class="btn write-btn" _blank>
+                            <img src="./images/icons/write.png" alt="wirte" />
+                            <span class="btn-text2">写文章</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="flex--row main-container">
+            <div class="main-left">
+                <div class="flex--column main-left-container">
+                    <div class="banner-news main-left-top">
+                        <a href="https://www.jianshu.com/p/913d17e64c5c">
+                            <img src="./images/banners/banner.png" alt="banner" class="banner" />
+                        </a>
+                    </div>
+                    <br />
+                    <div class="content main-left-middle">
+                        <div class="flex--column content-container">
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><img src="./images/icons/love.png" alt="love"><var
+                                                    id="love_num">1</var></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="./images/articles/img1.webp" alt="icon1">
+                                </a>
+                            </div>
+                            <hr />
+                            <hr />
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><img src="./images/icons/love.png" alt="love"><var
+                                                    id="love_num">1</var></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="./images/articles/img2.webp" alt="icon2">
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><img src="./images/icons/love.png" alt="love"><var
+                                                    id="love_num">1</var></>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="./images/articles/img1.webp" alt="icon1">
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"><img
+                                                        src="./images/icons/love.png" alt="love"><var
+                                                        id="love_num">1</var></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="./images/articles/img2.webp" alt="icon2">
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><img src="./images/icons/love.png" alt="love"><var
+                                                    id="love_num">1</var></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="../images/articles/img1.webp" alt="icon1">
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><img src="./images/icons/love.png" alt="love"><var
+                                                    id="love_num">1</var></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="./images/articles/img2.webp" alt="icon2">
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><img src="./images/icons/love.png" alt="love"><var
+                                                    id="love_num">1</var></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="./images/articles/img1.webp" alt="icon1">
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="flex--row content-item">
+                                <div class="flex--column article-part">
+                                    <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                        class="title">
+                                        <h2>标题</h2>
+                                    </a>
+                                    <p>简书是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区，它是一个帮助开发者成长的社区。</p>
+                                    <div class="info">
+                                        <ul class="flex--row info-container">
+                                            <li class="vip-level">
+                                                <img src="./images/icons/vip-level.png" alt="vip-level"><var
+                                                    id="vip_level">0.7</var>
+                                            </li>
+                                            <li class="name"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">作者</a>
+                                            </li>
+                                            <li class="comments"><a
+                                                    href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                                    <img src="./images/icons/comments.png" alt="comments"><var
+                                                        id="comments_num">0</var></a></li>
+                                            <li class="love"><img src="./images/icons/love.png" alt="love"><var
+                                                    id="love_num">1</var></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                    class="icon-part">
+                                    <img src="./images/articles/img2.webp" alt="icon2">
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="content-more">
+                                <button class="btn btn-more"><i class="for-more">阅读更多</i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer main-left-bottom">
+                        <div class="flex--column footer-container">
+                            <ul class="flex--row footer-menu">
+                                <li><a href="">关于简书</a></li>
+                                <li>·<a href="">联系我们</a></li>
+                                <li>·<a href="">加入我们</a></li>
+                                <li>·<a href="">简书出版</a></li>
+                                <li>·<a href="">品牌与徽标</a></li>
+                                <li>·<a href="">帮助中心</a></li>
+                                <li>·<a href="">合作伙伴</a></li>
+                                <li>·<a href="">举报</a></li>
+                            </ul>
+                            <div class="icp footer-info">
+                                <div class="smz">
+                                    <span>©2012-2021 上海佰集信息科技有限公司 / 简书 /</span>
+                                    <a target="_blank" href="https://beian.miit.gov.cn">
+                                        沪ICP备11018329号-5 /</a>
+                                    <a target="_blank"
+                                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402002252">
+                                        <img src="./images/footer/实名认证.png" alt="Smrz">
+                                    </a>
+                                    <a target="_blank"
+                                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402002252">
+                                        沪公网安备31010402002252号 /
+                                    </a>
+                                </div>
+                                <br>
+                                <div class="wxb">
+                                    <a target="_blank" href="https://www.12377.cn/">
+                                        <img src="./images/footer/网信办.png" alt="Wxb">
+                                    </a>
+                                    <a target="_blank" href="http://www.shjbzx.cn/">
+                                        <img src="./images/footer/举报中心.png" alt="Weifa">
+                                    </a>
+                                    <span>简书网举报邮箱：help@jianshu.com /</span>
+                                    <span>举报电话：13021078864 /</span>
+                                </div>
+                                <br>
+                                <div class="yyzz">
+                                    <a target="_blank" href="http://www.shjbzx.cn/">
+                                        <img src="./images/footer/962110.png">
+                                    </a>
+                                    <span>亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听 /</span>
+                                    <a target="_blank"
+                                        href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020171107081457000002158769-SAIC_SHOW_310000-20171115131223587837&amp;signData=MEQCIADWZ5aTcBeER5SOVp0ly+ElvKnwtjczum6Gi6wZ7/wWAiB9MAPM22hp947ZaBobux5PDkd0lfqoCOkVV7zjCYME6g==">
+                                        <img src="./images/footer/电子营业执照.png" alt="Zggsrz">
+                                    </a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="flex--column mian-right-container">
+                    <div class="flex--column banner-sidebar main-right-top">
+                        <div class="flex--column banner-index">
+                            <a class="banner-link"
+                                href="https://www.jianshu.com/mobile/campaign/day_by_day/join?from=home"
+                                target="_blank">
+                                <img src="./images/banners/banner1.png" alt="daily challenge">
+                            </a>
+                            <a class="banner-link" href="https://www.jianshu.com/mobile/club" target="_blank">
+                                <img src="./images/banners/banner2.png" alt="vip club">
+                            </a>
+                            <a class="banner-link" href="https://www.jianshu.com/mobile/books?category_id=284"
+                                target="_blank">
+                                <img src="./images/banners/banner3.png" alt="good articles">
+                            </a>
+                            <a class="banner-link" href="https://www.jianshu.com/publications" target="_blank">
+                                <img src="./images/banners/banner4.png" alt="publications">
+                            </a>
+                            <a class="flex--row btn download-btn"
+                                href="https://www.jianshu.com/apps?utm_medium=desktop&utm_source=index-aside-click"
+                                target="_blank">
+                                <img class="download-icon" src="./images/others/download.png" alt="download">
+                                <div class="big-download-icon"><img src="./images/others/download.png"
+                                        alt="big-download">
+                                </div>
+                                <div class="download-text">
+                                    <span class="download-suptext">下载简书手机App</span>
+                                    <img src="./images/icons/right-icon.png" alt="download-icon">
+                                    <br>
+                                    <span class="download-subtext">随时随地发现和创作内容</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="author-sidebar main-right-bottom">
+                        <hr />
+                        <div class="flex--column author-sidebar-container">
+                            <div class="flex--row author-header">
+                                <h2>推荐作者</h2>
+                                <button class="btn author-btn-change">
+                                    <img class="for-another" src="./images/icons/change.png" alt="for-another">
+                                    <i class="for-another">换一批</i>
+                                </button>
+                            </div>
+                            <div class="flex--column author-items">
+                                <div class="flex--row author-item">
+                                    <a
+                                        href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                        <div class="author-icon"><img src="./images/authors/author1.webp"
+                                                alt="author-icon"></div>
+                                    </a>
+                                    <div class="flex--column author-info">
+                                        <div class="author-top">
+                                            <a class="author-name"
+                                                href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                                target="_blank"><var id="author_name">作者名</var></a>
+                                            <div class="btn author-follow-btn">
+                                                <img src="./images/icons/add.png" alt="add-icon">
+                                                <span class="for-follow">关注</span>
+                                            </div>
+                                        </div>
+                                        <span>写了<var id="article_num">3.2</var>万字 · <var
+                                                id="like_num">10</var>k喜欢</span>
+                                    </div>
+                                </div>
+                                <div class="flex--row author-item">
+                                    <a
+                                        href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                        <div class="author-icon"><img src="./images/authors/author2.webp"
+                                                alt="author-icon">
+                                        </div>
+                                    </a>
+                                    <div class="flex--column author-info">
+                                        <div class="author-top">
+                                            <a class="author-name"
+                                                href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                                target="_blank"><var id="author_name">作者名</var></a>
+                                            <div class="btn author-follow-btn">
+                                                <img src="./images/icons/add.png" alt="add-icon">
+                                                <span class="for-follow">关注</span>
+                                            </div>
+                                        </div>
+                                        <span>写了<var id="article_num">3.2</var>万字 · <var
+                                                id="like_num">10</var>k喜欢</span>
+                                    </div>
+                                </div>
+                                <div class="flex--row author-item">
+                                    <a
+                                        href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                        <div class="author-icon"><img src="./images/authors/author3.webp"
+                                                alt="author-icon">
+                                        </div>
+                                    </a>
+                                    <div class="flex--column author-info">
+                                        <div class="author-top">
+                                            <a class="author-name"
+                                                href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                                target="_blank"><var id="author_name">作者名</var></a>
+                                            <div class="btn author-follow-btn">
+                                                <img src="./images/icons/add.png" alt="add-icon">
+                                                <span class="for-follow">关注</span>
+                                            </div>
+                                        </div>
+                                        <span>写了<var id="article_num">3.2</var>万字 · <var
+                                                id="like_num">10</var>k喜欢</span>
+                                    </div>
+                                </div>
+                                <div class="flex--row author-item">
+                                    <a
+                                        href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                        <div class="author-icon"><img src="./images/authors/author4.webp"
+                                                alt="author-icon">
+                                        </div>
+                                    </a>
+                                    <div class="flex--column author-info">
+                                        <div class="author-top">
+                                            <a class="author-name"
+                                                href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                                target="_blank"><var id="author_name">作者名</var></a>
+                                            <div class="btn author-follow-btn">
+                                                <img src="./images/icons/add.png" alt="add-icon">
+                                                <span class="for-follow">关注</span>
+                                            </div>
+                                        </div>
+                                        <span>写了<var id="article_num">3.2</var>万字 · <var
+                                                id="like_num">10</var>k喜欢</span>
+                                    </div>
+                                </div>
+                                <div class="flex--row author-item">
+                                    <a
+                                        href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button">
+                                        <div class="author-icon"><img src="./images/authors/author5.webp"
+                                                alt="author-icon">
+                                        </div>
+                                    </a>
+                                    <div class="flex--column author-info">
+                                        <div class="author-top">
+                                            <a class="author-name"
+                                                href="https://www.jianshu.com/sign_in?utm_source=desktop&utm_medium=not-signed-in-index-user-follow-button"
+                                                target="_blank"><var id="author_name">作者名</var></a>
+                                            <div class="btn author-follow-btn">
+                                                <img src="./images/icons/add.png" alt="add-icon">
+                                                <span class="for-follow">关注</span>
+                                            </div>
+                                        </div>
+                                        <span>写了<var id="article_num">3.2</var>万字 · <var
+                                                id="like_num">10</var>k喜欢</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="author-more">
+                                <a class="btn author-btn-more"
+                                    href="https://www.jianshu.com/recommendations/users?utm_source=desktop&utm_medium=index-users">
+                                    <span class="for-more">查看全部</span>
+                                    <img src="./images/icons/right-icon.png" alt="right-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

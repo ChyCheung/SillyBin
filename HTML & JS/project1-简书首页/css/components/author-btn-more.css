@@ -1,0 +1,43 @@
+/* Below is the code of d:\Codefield\Codes\Web\project1-简书首页\css\modules\author-btn-more.css */
+
+.author-more {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.author-more .btn {
+    display: block;
+    width: 100%;
+    height: 35  px;
+    text-align: center;
+    position: absolute;
+    padding: 7px;
+    left: 0;
+    font-size: 13px;
+    color: #787878;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto 10px;
+}
+
+.author-more .btn img {
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.author-btn-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+}
+ 
+.author-more .btn:hover {
+    background-color: #f2f2f2;
+}

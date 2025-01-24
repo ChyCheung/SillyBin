@@ -1,0 +1,76 @@
+.footer {
+    width: 100%;
+    height: auto;
+    bottom: 5px;
+    position: absolute;
+    /* margin-top: 100px; */
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.footer-container {
+    width:100%;
+    margin-top: 20px;
+    align-items: flex-start;
+    column-gap: 10px;
+}
+
+.footer-menu > li, 
+.footer-menu > li > a {
+    font-size: 13px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.footer-menu > li > a:hover {
+    color: #333333;
+}
+
+.icp, 
+.icp a {
+    font-size: 12px;
+    color: #999999;
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
+}
+
+.icp {
+    height: auto;
+    text-align: left;
+    margin: 10px 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+}
+
+.icp img {
+    /* max-width: 100px; */
+    height: 20px;
+    vertical-align: middle;
+}
+
+.smz, 
+.smz a, 
+.smz span 
+.wxb,
+.wxb a, 
+.wxb span,
+.yyzz,
+.yyzz a,
+.yyzz span {
+    font-size: 10px;
+    color: #999999;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.icp a:hover {
+    color: #333333;
+}
+

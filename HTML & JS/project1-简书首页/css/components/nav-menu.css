@@ -1,0 +1,140 @@
+.nav-menu {
+    /* position: relative; */
+    /* max-width: 960px; */
+    /* min-width: 960px; */
+    /* margin: auto; */
+    /* background-color: #777; */
+    font-size: 14px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;      
+}
+
+.nav-menu > .btn {
+    display: none;
+}
+
+.nav-menu-list {
+    font-size: 14px;
+    height: 56px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* column-gap: 2px; */
+}
+
+.nav-menu-list li {
+    font-size: 17px;
+    margin-right: 5px;
+    list-style: none;
+    flex-shrink: 0;
+    /* padding: 6px 12px; */
+    /* border: 1px solid black; */
+}
+
+.nav-menu .tab:hover {
+    background-color: #f5f5f5;
+}
+
+.tab a {
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 2px;
+    /* list-style: none; */
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+    flex-shrink: 0;
+    /* text-overflow: ellipsis; */
+    font-size: 17px;
+    height: 56px;
+    line-height: 26px;
+    padding: 10px 20px;
+    display: flex;
+    color: black;
+}
+
+.tab img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+.tab img:hover {
+    opacity: 1;
+}
+
+.search {
+    width: 360px;
+    height: 56px;
+    padding: 5px 0;
+    /* background-color: aqua; */
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+}
+
+.search form {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    /* background-color: orange; */
+}
+
+.search input {
+    padding: 0 40px 0 20px;
+    width: 240px;
+    height: 38px;
+    border: 1px solid #eeeeee;
+    border-radius: 40px;
+    background-color: #eeeeee;
+    padding: 0 10px;
+    font-size: 14px;
+
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+    -o-transition: width .5s;
+    transition-delay: .1s;
+    -moz-transition-delay: .1s;
+    -webkit-transition-delay: .1s;
+    -o-transition-delay: .1s;
+
+}
+
+.search input:focus {
+    width: 360px;
+}
+
+.search input[type="text"] {
+    background-color: #eeeeee;
+}
+
+.search form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.search button {
+    position: absolute;
+    top: auto;
+    right: 5px;
+    height: 32px;
+    width: 32px;
+    background-color: #eee;
+    border: none;
+    border-radius: 50%;
+}
+
+.search button img {
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+}
+
+
+
